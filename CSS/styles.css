@@ -1,0 +1,233 @@
+/* ====== GLOBALT ====== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* ====== HEADER ====== */
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+}
+
+
+
+.time-date h1 {
+    font-size: 15px;
+    background:  rgba(100, 98, 98, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    display: inline;
+    margin: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.head-line h1 {
+    margin-top: 200px;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ====== GRID ====== */
+main {
+    display: flex;
+    flex-direction: row;      /* Lägger allt vågrätt */
+    justify-content: center;  /* Centrerar hela raden */
+    align-items: stretch;
+    gap: 20px;                /* Avstånd mellan boxarna */
+    padding: 20px;
+}
+
+.info-box {
+    flex: 1;
+    width: 100%;
+    height: 400px;
+    background: rgba(100, 98, 98, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box li {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+/* Footern ska alltid ligga längst ner */
+.info-box footer {
+    margin-top: auto;
+    padding-top: 10px;
+    justify-content: center;
+    display: flex;
+}
+
+/* ====== RESPONSIV ====== */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.new-link-row input {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.3);
+    flex: 1;
+}
+
+.save-btn {
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+
+
+/* Container för varje länk */
+#link-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50px;
+
+    padding: 10px 16px;
+    margin-bottom: 10px;
+}
+
+/* Själva länken */
+#link-list li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    flex: 1;
+}
+
+/* Delete-knappen */
+.delete-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#notes-area {
+    flex: 1;
+    width: 90%;
+    height: 330px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    resize: none;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(6px);
+    font-size: 16px;
+}
+
+
+
+#change-bg-btn {
+    background: rgba(100, 98, 98, 0.15);
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+body {
+    transition: background-image 0.6s ease-in-out;
+}
+
+.news-item {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.news-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.02);
+}
+
+.news-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.news-source {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
