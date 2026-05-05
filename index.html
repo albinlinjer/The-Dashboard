@@ -1,58 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
-
-</head>
-    <body>
-        <header>
-            <div class="time-date">
-                <h1 id="clock"></h1>
-            </div>
-            <div class="head-line">
-                <h1 id="title">John Doe Daschboard</h1>
-            </div>
-        </header>
-        <main>
-            <div class="info-box">
-                <h3>Snabblänkar</h3>
-                    <ul id="link-list"></ul>
-                    <footer>
-                        <button id="show-add-row"> Lägg till länk</button>
-                    </footer>
-            </div>
-            <div class="info-box">
-                <ul>
-                    <h3>Dagens Väder</h3>
-                    <div id="weather-box"></div>
-                </ul>
-            </div>
-            <div class="info-box">
-                <h3>Senaste från Sportbladet</h3>
-                <div id="news-box"></div>
-                <ul>
-                </ul>
-            </div>
-            <div class="info-box">
-                <div>
-                    <h3>Anteckningar</h3>
-                    <textarea id="notes-area" placeholder="Skriv dina tankar här..."></textarea>
-                </div>
-            </div>
-        </main>
-            <footer>
-                <button id="change-bg-btn">⟳ Slumpa ny bakgrund</button>
-            </footer>
-                <script src="/JS/clock.js"></script>
-                <script src="/JS/title.js"></script>
-                <script src="/JS/links.js"></script>
-                <script src="/JS/notes.js"></script>
-                <script src="/JS/ssl.js"></script>
-                <script src="/JS/background.js"></script>
-                <script src="/JS/weather.js"></script>
-                <script src="/JS/news.js"></script>
-    </body>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="./JS/clock.js" defer></script>
+    <script src="./JS/title.js" defer></script>
+    <script src="./JS/links.js" defer></script>
+    <script src="./JS/notes.js" defer></script>
+    <script src="./JS/background.js" defer></script>
+    <script src="./JS/weather.js" defer></script>
+    <script src="./JS/news.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="time-date">
+        <h1 id="clock"></h1>
+      </div>
+      <div class="head-line">
+        <h1 id="title">John Doe Daschboard</h1>
+      </div>
+    </header>
+    <main>
+      <div class="info-box">
+        <h3>Snabblänkar</h3>
+        <ul id="link-list"></ul>
+        <footer>
+          <button id="show-add-row">Lägg till länk</button>
+        </footer>
+      </div>
+      <div class="info-box">
+        <ul>
+          <h3>Dagens Väder</h3>
+          <div id="weather-box"></div>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h3>Senaste från Sportbladet</h3>
+        <div id="news-box"></div>
+        <ul></ul>
+      </div>
+      <div class="info-box">
+        <div>
+          <h3>Anteckningar</h3>
+          <textarea
+            id="notes-area"
+            placeholder="Skriv dina tankar här..."
+          ></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button id="change-bg-btn">⟳ Slumpa ny bakgrund</button>
+    </footer>
+  </body>
 </html>
